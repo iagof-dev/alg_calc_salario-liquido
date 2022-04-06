@@ -6,9 +6,19 @@
 /// 
 ///Não use este Aplicativo/Programa para uso continuo
 
+
+///Variáveis
 double salario = 0;
 double descontos = 0;
+double valor_final = 0;
+double inss = 0;
+double irrf = 0;
+double roubo = 0;
 string logo = string.Empty;
+WebClient webc = new WebClient();
+string logomsg = webc.DownloadString("https://pastebin.com/raw/Vp41Tzgf");
+string my_ft = webc.DownloadString("https://pastebin.com/raw/0bnnUP9i");
+
 
 Console.Title = "Calculadora de Valor Líquido - n3rdydzn.xyz";
 
@@ -22,7 +32,6 @@ double ate2203 = 9;
 double ate3305 = 12;
 //de R$3.305 até 6.433
 double ate6433 = 14;
-//===========================================
 
 //=============TABELA DE IRRF================
 //até 1.903,98 = 0%
@@ -35,19 +44,10 @@ double ate3751 = 15;
 double ate4664 = 22.5;
 //acima de 4.664,68 = 27,50%
 double acima46646 = 27.5;
-
 //===========================================
 
 
-double valor_final = 0;
-
-double inss = 0;
-double irrf = 0;
-double roubo = 0;
-
-WebClient webc = new WebClient();
-string logomsg = webc.DownloadString("https://pastebin.com/raw/Vp41Tzgf");
-   
+//Funções
 void logo_msg()
 {
     Console.ForegroundColor = ConsoleColor.Green;
@@ -60,7 +60,7 @@ void user_menu()
     logo_msg();
     Console.WriteLine("Escolha uma opção:");
     Console.WriteLine("[1] Calcular");
-    Console.WriteLine("[2] Github");
+    Console.WriteLine("[2] Sobre");
     string user_perg = Console.ReadLine();
 
 if (user_perg == "1")
@@ -151,7 +151,6 @@ void calc_inss()
 }
 void creditos()
 {
-    string my_ft = webc.DownloadString("https://pastebin.com/raw/0bnnUP9i");
     Console.WriteLine(my_ft);
     Console.ForegroundColor = ConsoleColor.Blue;
     Console.WriteLine("N3rdyDzn");
@@ -168,10 +167,8 @@ void creditos()
     user_menu();
 }
 
-
+//Loader
 user_menu();
-
-
 if (descontos == 0)
 {
     //sem Descontos (Valor Bruto)
@@ -203,3 +200,6 @@ else
     Console.ReadKey();
     user_menu();
 }
+
+
+//fim

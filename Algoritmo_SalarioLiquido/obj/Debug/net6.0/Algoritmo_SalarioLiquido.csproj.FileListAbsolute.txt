@@ -13,3 +13,18 @@ D:\Projetos VS\Algoritmo_SalarioLiquido\Algoritmo_SalarioLiquido\obj\Debug\net6.
 D:\Projetos VS\Algoritmo_SalarioLiquido\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.pdb
 D:\Projetos VS\Algoritmo_SalarioLiquido\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.genruntimeconfig.cache
 D:\Projetos VS\Algoritmo_SalarioLiquido\Algoritmo_SalarioLiquido\obj\Debug\net6.0\ref\Algoritmo_SalarioLiquido.dll
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\bin\Debug\net6.0\Algoritmo_SalarioLiquido.exe
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\bin\Debug\net6.0\Algoritmo_SalarioLiquido.deps.json
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\bin\Debug\net6.0\Algoritmo_SalarioLiquido.runtimeconfig.json
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\bin\Debug\net6.0\Algoritmo_SalarioLiquido.dll
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\bin\Debug\net6.0\ref\Algoritmo_SalarioLiquido.dll
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\bin\Debug\net6.0\Algoritmo_SalarioLiquido.pdb
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.dll
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\ref\Algoritmo_SalarioLiquido.dll
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.pdb
+C:\Users\Usuario\Desktop\alg_calc_salario-liquido-main\Algoritmo_SalarioLiquido\obj\Debug\net6.0\Algoritmo_SalarioLiquido.genruntimeconfig.cache
