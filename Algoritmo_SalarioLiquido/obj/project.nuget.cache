@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g71qXaHdje85UpRhMkR+qLxYvmJx3DbU693cKhcLLK0uOy43vEYrv/DMAEKytBkswOObDX+mPSRiYNaL1kd34g==",
+  "dgSpecHash": "JPXKWJ5Rx6tX8jFf5ROpt9/wmjNCzVwzjaI7k9lIbtmzXbaEA0r04TP+l18GqgRzi/wNx0oibhyVc43AxyZx5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\alg_calc_salario-liquido-main\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

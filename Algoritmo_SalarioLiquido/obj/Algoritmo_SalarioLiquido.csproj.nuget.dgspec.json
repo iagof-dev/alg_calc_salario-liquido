@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\alg_calc_salario-liquido-main\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\alg_calc_salario-liquido-main\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {
+    "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\alg_calc_salario-liquido-main\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
         "projectName": "Algoritmo_SalarioLiquido",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\alg_calc_salario-liquido-main\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\alg_calc_salario-liquido-main\\Algoritmo_SalarioLiquido\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

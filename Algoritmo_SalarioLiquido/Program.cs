@@ -4,7 +4,8 @@
 /// Algoritmo Desenvolvido como Atividade Escolar
 /// Dados podem não estar 100% correto/atualizado
 /// 
-///Não use este Aplicativo/Programa para uso continuo
+///Não use este Aplicativo/Programa para uso contínuo
+///©N3rdyDzn 2022
 
 
 ///Variáveis
@@ -44,9 +45,9 @@ double ate2826 = 0.075;
 //de 2.826,66 até 3.751,05 = 15%;
 double ate3751 = 0.015;
 //de 3.751,06 até 4.664,68 = 22,50%
-double ate4664 = 0.0225;
+double ate4664 = 0.225;
 //acima de 4.664,68 = 27,50%
-double acima46646 = 0.0275;
+double acima46646 = 0.275;
 //===========================================
 
 
@@ -105,7 +106,7 @@ void calc_irrf()
     {
         //caso se for menor ou igual á R$1.100
         case <= 1903:
-            irrf = 0;
+            irrf = Convert.ToDouble(0);
             break;
         case <= 2826:
             irrf = Convert.ToDouble(salario * ate2826);
@@ -170,11 +171,11 @@ if (descontos == 0)
     System.Threading.Thread.Sleep(1500);
     Console.Clear();
     Console.WriteLine("Você recebeu apenas:");
-    Console.WriteLine("R$" + valor_final);
-    Console.WriteLine("Governo roubou de você: R$" + roubo);
-    Console.WriteLine("Salario:" + salario);
-    Console.WriteLine("Inss:" + inss);
-    Console.WriteLine("IRRF:" + irrf);
+    Console.WriteLine("R$" + Convert.ToInt32(valor_final));
+    Console.WriteLine("Governo roubou de você: R$" + Convert.ToInt32(roubo));
+    Console.WriteLine("Salario:" + Convert.ToInt32(salario));
+    Console.WriteLine("Inss:" + Convert.ToInt32(inss));
+    Console.WriteLine("IRRF:" + Convert.ToInt32(irrf));
     Console.ReadKey();
     user_menu();
 }
