@@ -25,25 +25,28 @@ Console.Title = "Calculadora de Valor Líquido - n3rdydzn.xyz";
 
 //===============VALORES INSS================
 ///até 1.100R$
-double aters1100 = 7.5;
+double aters1100 = 0.0075;
 //de 1.100,01 até 2.203,00
-double ate2203 = 9;
+double ate2203 = 0.09;
 //de R$2.203,00 até 3.305
-double ate3305 = 12;
+double ate3305 = 0.012;
 //de R$3.305 até 6.433
-double ate6433 = 14;
+double ate6433 = 0.014;
+//inss teto
+double teto_inss = 0.020;
+
 
 //=============TABELA DE IRRF================
 //até 1.903,98 = 0%
 
 //de 1.903,98 até 2.826,65 = 7.50%
-double ate2826 = 7.5;
+double ate2826 = 0.075;
 //de 2.826,66 até 3.751,05 = 15%;
-double ate3751 = 15;
+double ate3751 = 0.015;
 //de 3.751,06 até 4.664,68 = 22,50%
-double ate4664 = 22.5;
+double ate4664 = 0.0225;
 //acima de 4.664,68 = 27,50%
-double acima46646 = 27.5;
+double acima46646 = 0.0275;
 //===========================================
 
 
@@ -105,20 +108,16 @@ void calc_irrf()
             irrf = 0;
             break;
         case <= 2826:
-            irrf = Convert.ToDouble(salario / ate2826);
-            Console.WriteLine("debug-02=" + irrf);
+            irrf = Convert.ToDouble(salario * ate2826);
             break;
         case <= 3751:
-            irrf = Convert.ToDouble(salario / ate3751);
-            Console.WriteLine("debug-02=" + irrf);
+            irrf = Convert.ToDouble(salario * ate3751);
             break;
         case <= 4664:
-            irrf = Convert.ToDouble(salario / ate4664);
-            Console.WriteLine("debug-02=" + irrf);
+            irrf = Convert.ToDouble(salario * ate4664);
             break;
-        case > 4664:
-            irrf = Convert.ToDouble(salario / acima46646);
-            Console.WriteLine("debug-02=" + irrf);
+        case >= 4664:
+            irrf = Convert.ToDouble(salario * acima46646);
             break;
     }
 }
@@ -129,24 +128,18 @@ void calc_inss()
     {
         //caso se for menor ou igual á R$1.100
         case <= 1100:
-            inss = Convert.ToDouble(salario / aters1100);
-            Console.WriteLine("debug-01=" + inss);
+            inss = Convert.ToDouble(salario * aters1100);
             break;
         case <= 2203:
-            inss = Convert.ToDouble(salario / ate2203);
-            Console.WriteLine("debug-01=" + inss);
+            inss = Convert.ToDouble(salario * ate2203);
             break;
         case <= 3305:
-            inss = Convert.ToDouble(salario / ate3305);
-            Console.WriteLine("debug-01=" + inss);
+            inss = Convert.ToDouble(salario * ate3305);
             break;
-        case <= 6433:
-            inss = Convert.ToDouble(salario / ate6433);
-            Console.WriteLine("debug-01=" + inss);
+        case >= 6433:
+            inss = Convert.ToDouble(salario * ate6433);
             break;
     }
-    roubo = (inss + irrf);
-    valor_final = (salario - roubo);
 
 }
 void creditos()
@@ -169,10 +162,12 @@ void creditos()
 
 //Loader
 user_menu();
+roubo = (inss + irrf);
+valor_final = (salario - roubo);
 if (descontos == 0)
 {
     //sem Descontos (Valor Bruto)
-    System.Threading.Thread.Sleep(5000);
+    System.Threading.Thread.Sleep(1500);
     Console.Clear();
     Console.WriteLine("Você recebeu apenas:");
     Console.WriteLine("R$" + valor_final);
@@ -187,7 +182,7 @@ else
 {
     //com descontos (valor liquido)
     double valor_final_descontado = (valor_final - descontos);
-    System.Threading.Thread.Sleep(5000);
+    System.Threading.Thread.Sleep(1500);
     Console.Clear();
     Console.WriteLine("Era pra você receber: R$" + salario);
     Console.WriteLine("Você recebeu apenas:");
