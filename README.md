@@ -3,14 +3,14 @@
 Calculadora de Salário Bruto somando taxas INSS, IRRF e descontos
 
 
-### 🙏🏽 Contribuição 
+## 🙏🏽 Contribuição 
 
 Contribuições são muito bem vindas!
 
 ![Fork](https://img.shields.io/github/forks/n3rdydzn/meu-site?style=social)
 
 
-### 📷 Screenshots
+## 📷 Screenshots
 
 
 🏠 Home Page
