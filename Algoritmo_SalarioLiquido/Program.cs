@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using ConsoleTables;
 
 /// N3rdy Dzn - n3rdydzn.xyz, github.com/n3rdydzn
 /// Algoritmo Desenvolvido como Atividade Escolar
@@ -13,6 +14,7 @@ double salario = 0;
 double descontos = 0;
 double valor_final = 0;
 double inss = 0;
+double valor_final_descontado = 0;
 double irrf = 0;
 double roubo = 0;
 string logo = string.Empty;
@@ -165,7 +167,6 @@ void menu_creditos()
 user_menu();
 roubo = (inss + irrf);
 valor_final = (salario - roubo);
-
 //caso tenha descontos
 if (descontos == 0)
 {
@@ -173,29 +174,28 @@ if (descontos == 0)
     System.Threading.Thread.Sleep(1500);
     Console.Clear();
     menu_logo();
-    Console.WriteLine("Você recebeu apenas:");
-    Console.WriteLine("R$" + Convert.ToInt32(valor_final));
-    Console.WriteLine("Governo roubou de você: R$" + Convert.ToInt32(roubo));
-    Console.WriteLine("Salario:" + Convert.ToInt32(salario));
-    Console.WriteLine("Inss:" + Convert.ToInt32(inss));
-    Console.WriteLine("IRRF:" + Convert.ToInt32(irrf));
+    Console.WriteLine("De acordo com suas respostas:");
+    var table = new ConsoleTable("Salário", "Inss", "Irrf", "Total Taxas", "Valor Final");
+    table.AddRow("R$" + Convert.ToInt32(salario), "R$" + Convert.ToInt32(inss), "R$" + Convert.ToInt32(irrf), "R$" + Convert.ToInt32(roubo), "R$" + Convert.ToInt32(valor_final));
+    table.Write();
+    Console.WriteLine(" ");
+    Console.WriteLine("Pressione qualquer tecla para voltar...");
     Console.ReadKey();
     user_menu();
 }
 else
 {
     //com descontos (valor liquido)
-    double valor_final_descontado = (valor_final - descontos);
+    valor_final_descontado = (valor_final - descontos);
     System.Threading.Thread.Sleep(1500);
     Console.Clear();
-    Console.WriteLine("Era pra você receber: R$" + salario);
-    Console.WriteLine("Você recebeu apenas:");
-    Console.WriteLine("R$" + valor_final);
-    Console.WriteLine("Governo roubou de você: R$" + roubo);
-    Console.WriteLine("Salario: R$" + salario);
-    Console.WriteLine("Inss: R$" + inss);
-    Console.WriteLine("IRRF: R$" + irrf);
-    Console.WriteLine("Descontos: R$" + valor_final_descontado);
+    menu_logo();
+    Console.WriteLine("De acordo com suas respostas:");
+    var table = new ConsoleTable("Salário", "Inss", "Irrf", "Descontos", "Total R.", "Valor Final");
+    table.AddRow("R$" + Convert.ToInt32(salario), "R$" + Convert.ToInt32(inss), "R$" + Convert.ToInt32(irrf), "R$"+ Convert.ToInt32(descontos), "R$" + Convert.ToInt32(roubo), "R$" + Convert.ToInt32(valor_final_descontado));
+    table.Write();
+    Console.WriteLine(" ");
+    Console.WriteLine("Pressione qualquer tecla para voltar...");
     Console.ReadKey();
     user_menu();
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {}
+    "D:\\Projetos VS\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {
+    "D:\\Projetos VS\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
+        "projectUniqueName": "D:\\Projetos VS\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
         "projectName": "Algoritmo_SalarioLiquido",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\alg_calc_salario-liquido\\Algoritmo_SalarioLiquido\\obj\\",
+        "projectPath": "D:\\Projetos VS\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido.csproj",
+        "packagesPath": "C:\\Users\\N3rdy\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos VS\\Algoritmo_SalarioLiquido\\Algoritmo_SalarioLiquido\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Visual Studio\\Tools Sdks\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\N3rdy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ConsoleTables": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
