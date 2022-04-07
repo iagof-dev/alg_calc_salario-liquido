@@ -75,7 +75,7 @@ if (user_perg == "1")
 else
     {
         Console.Clear();
-        creditos();
+        menu_creditos();
     }
 }
 void user_ask()
@@ -143,7 +143,7 @@ void calc_inss()
     }
 
 }
-void creditos()
+void menu_creditos()
 {
     Console.WriteLine(my_ft);
     Console.ForegroundColor = ConsoleColor.Blue;
@@ -165,6 +165,8 @@ void creditos()
 user_menu();
 roubo = (inss + irrf);
 valor_final = (salario - roubo);
+
+//caso tenha descontos
 if (descontos == 0)
 {
     //sem Descontos (Valor Bruto)
