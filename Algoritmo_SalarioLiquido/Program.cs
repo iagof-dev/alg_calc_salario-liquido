@@ -52,7 +52,7 @@ double acima46646 = 0.275;
 
 
 //Funções
-void logo_msg()
+void menu_logo()
 {
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine(logomsg);
@@ -61,7 +61,7 @@ void logo_msg()
 void user_menu()
 {
     Console.Clear();
-    logo_msg();
+    menu_logo();
     Console.WriteLine("Escolha uma opção:");
     Console.WriteLine("[1] Calcular");
     Console.WriteLine("[2] Sobre");
@@ -79,8 +79,8 @@ else
     }
 }
 void user_ask()
-{ 
-logo_msg();
+{
+menu_logo();
 Console.WriteLine("Digite Valor Salário");
 Console.ForegroundColor = ConsoleColor.Gray;
 Console.WriteLine("dica: não use pontuação ou acentos.");
@@ -88,7 +88,7 @@ Console.ForegroundColor = ConsoleColor.White;
 salario = Convert.ToDouble(Console.ReadLine());
 Console.Clear();
 
-logo_msg();
+menu_logo();
 Console.WriteLine("Digite Valor dos DESCONTOS (Opcional; Digite 0 caso não há)");
 descontos = Convert.ToDouble(Console.ReadLine());
 Console.Clear();
@@ -172,6 +172,7 @@ if (descontos == 0)
     //sem Descontos (Valor Bruto)
     System.Threading.Thread.Sleep(1500);
     Console.Clear();
+    menu_logo();
     Console.WriteLine("Você recebeu apenas:");
     Console.WriteLine("R$" + Convert.ToInt32(valor_final));
     Console.WriteLine("Governo roubou de você: R$" + Convert.ToInt32(roubo));
